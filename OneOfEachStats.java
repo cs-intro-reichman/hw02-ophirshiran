@@ -45,7 +45,7 @@ public class OneOfEachStats {
 		childrenPerFam=0;
 		girl= false;
 		boy= false;
-
+		}
 		double avg=((double)childrenSum/T);
 		System.out.println("Average: "+avg+" children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: "+two);
@@ -61,7 +61,7 @@ public class OneOfEachStats {
 		else if((four>three)&&(four>two)){
 			System.out.println("The most common number of children is 4 or more.");
 		}
-		
+
 		//// In the previous version of this program, you used a statement like:
 		//// double rnd = Math.random();
 		//// Where "rnd" is the variable that stores the generated random value.
