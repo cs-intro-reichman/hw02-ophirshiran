@@ -3,25 +3,21 @@
  */
 public class DamkaBoard {
 	public static void main(String[] args) {
+	
 		int n = Integer.parseInt(args[0]);
-		int i=1;
-		int lines=0;
-		boolean space=false;
-		while((n>i)&&(n>lines)){
-			System.out.print("* ");
-			i++;
-			if(n==i){
-				System.out.println("*");
-				i=1;
-				lines++;
-					if(space!=true){
-						System.out.print(" ");
-						space=true;
-					}
-					else{
-						space=false;
-					}
+
+		for(int rows=0; rows<n; rows++){
+			for(int lines=0; lines<n; lines++){
+				
+				if((rows%2==0)){
+					System.out.print("* ");
+				} 
+				else{
+					System.out.print(" *");
+				}
+			
 			}
+			System.out.println();
 		}
 	}
 }
